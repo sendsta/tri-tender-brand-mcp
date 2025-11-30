@@ -1,0 +1,4 @@
+name = "tri-tender-brand-letterhead-mcp"
+description = "Brand & Letterhead Engine for Tri-Tender (colors, fonts, letterheads, charts, and brand books)."
+entrypoint = "server.py:mcp"
+language = "python"
