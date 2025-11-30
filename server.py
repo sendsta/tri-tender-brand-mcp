@@ -13,7 +13,6 @@ Responsibilities:
 
 from __future__ import annotations
 
-import asyncio
 from dataclasses import asdict
 from typing import List, Dict, Any
 
@@ -35,10 +34,9 @@ from brand_engine.brand_book import (
     generate_brand_book_pdf_data_url,
 )
 
-mcp = FastMCP(
-    name="tri-tender-brand-letterhead-mcp",
-    description="Brand & Letterhead Engine for Tri-Tender: builds brand profiles, letterheads, charts, and brand books.",
-)
+# NOTE: For maximum compatibility with FastMCP Cloud's current fastmcp version,
+# we only pass the `name` positional argument here.
+mcp = FastMCP("tri-tender-brand-letterhead-mcp")
 
 
 @mcp.tool()
